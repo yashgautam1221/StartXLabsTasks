@@ -1,86 +1,78 @@
 <!DOCTYPE html>
 <html>
-    <head>
-      
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-      <script src="task1.js"></script>
-      <script src="task2.js"></script>
-      <script src="task3.js"></script>
-    </head>
-    <body>
-      
-      
-      <div class="accordion" id="accordionExample">
-        <div >
-          <div  id="headingOne">
-            <h2 class="mb-0">
-              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#task1" aria-expanded="true" aria-controls="task1">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="task1.js"></script>
+    <script src="task2.js"></script>
+    <script src="task3.js"></script>
+</head>
+
+<body>
+    <div class="accordion" id="accordionExample">
+        <div>
+            <h2 class="mb-5">
+                <button style="margin-left: 1%;" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#task1" aria-expanded="true" aria-controls="task1">
                 Task 1
               </button>
-            </h2>
-          </div>
-          
-          <div  id="headingTwo">
-            <h2 class="mb-0">
-              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#task2" aria-expanded="false" aria-controls="task2">
+                <button style="margin-left: 1%;" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#task2" aria-expanded="false" aria-controls="task2">
                 Task 2
               </button>
+                <button style="margin-left: 1%;" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#task3" aria-expanded="false" aria-controls="task3">
+                Task 3
+              </button>
             </h2>
-          </div>
-      <div  id="headingThree">
-        <h2 class="mb-0">
-          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#task3" aria-expanded="false" aria-controls="task3">
-            Task 3
-          </button>
-        </h2>
-      </div>
-      <div id="task1" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-          <!-- Task 1 -->
-          <div class="col-4 offset-4">
-            <h3>Enter input for Task 1</h3>
-            
-            <input type="text" id="seconds" >
-            
-            <button type="button" class="btn btn-outline-info btn-sm" onclick="secondsToDMS()">Convert</button>
-            
-            <p id="hours"></p>
-            <p id="min"></p>
-            <p id="second"></p>
-          </div>
+            <div id="task1" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <!-- Task 1 -->
+                <div class="col-4 offset-4">
+                    <p>Input Format:<br>Enter a number. eg - 129 </p>
+                    <h3>Enter input for Task 1</h3>
+
+                    <input type="text" id="seconds">
+
+                    <button type="button" class="btn btn-outline-info btn-sm" onclick="secondsToDMS()">Convert</button>
+
+                    <p id="hours"></p>
+                    <p id="min"></p>
+                    <p id="second"></p>
+                </div>
+            </div>
         </div>
-      </div>
-    <div>
-      <div id="task2" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-      <!-- task 2 -->
-      <div class="col-4 offset-4">
-        <h3>Enter Input for Task 2</h3>
-        
-        <input type="text" id="str_inp" >
-        
-        <button type="button" class="btn btn-outline-info btn-sm" onclick="task2()">Convert</button>
-        
-        <p style="margin-top:5%" id="xor"></p>
-      </div>
-      </div>
-    </div>
-    <div>
-      <div id="task3" class="collapse" data-parent="#accordionExample">
-        <div class="col-4 offset-4">
-          <h3>Enter Input for Task 3</h3>
-          
-          <input type="text" id="toSort" >
-          
-          <button type="button" class="btn btn-outline-info btn-sm" onclick="task3()">Convert</button>
-          
-          <p style="margin-top:5%" id="sorted"></p>
+        <div>
+            <div id="task2" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <!-- task 2 -->
+                <div class="col-4 offset-4">
+                    <p>Input Format:<br>Enter ranges. eg - 1 4 2 5 where range 1 is [1,4] and range 2 is [2,5] </p>
+                    <h3>Enter Input for Task 2</h3>
+
+                    <input type="text" id="str_inp">
+
+                    <button type="button" class="btn btn-outline-info btn-sm" onclick="task2()">Run</button>
+
+                    <p style="margin-top:5%" id="xor"></p>
+                </div>
+            </div>
         </div>
-      </div>  
+        <div>
+            <div id="task3" class="collapse" data-parent="#accordionExample">
+                <div class="col-4 offset-4">
+                    <p>Input Format:<br>Enter strings. eg - bfd sdc abc </p>
+                    <h3>Enter Input for Task 3</h3>
+
+                    <input type="text" id="toSort">
+
+                    <button type="button" class="btn btn-outline-info btn-sm" onclick="task3()">Run</button>
+
+                    <p style="margin-top:5%" id="sorted"></p>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
 
 
 </body>
+
 </html>

@@ -6,7 +6,7 @@ function task2() {
     // // while(n--){
 
     // // }
-    let i=2;
+    let i=0;
     while(i+2<str.length){
         let l = parseInt(str[i]);
         let r =parseInt(str[i+2]);
