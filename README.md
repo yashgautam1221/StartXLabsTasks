@@ -1,3 +1,6 @@
+https://yashgautam1221.github.io/StartXLabsTasks/
+
+
 Task 1
 Get number of hours, minutes and seconds from number of seconds.
 For example :  If number of seconds provided are 129 , then number of hours will be 0 , minutes 2, seconds 9.
@@ -39,5 +42,3 @@ Output :
 “BOOUU”
 “PGGGG”
 “UVVVV”
-
-https://yashgautam1221.github.io/StartXLabsTasks/
